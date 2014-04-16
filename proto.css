@@ -315,10 +315,11 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,.45);
 /*SEARCH BAR STYLES*/
 
 .header-search {
-	width: 600px;
+	width: 40%;
 	height: 50px;
 	float: left;
-	padding-left: 22px;
+	display: inline-block;
+	padding-left: 1%;
 	-moz-transition: opacity .25s linear;
 	-webkit-transition: opacity .25s linear;
 	-o-transition: opacity .25s linear;
@@ -327,26 +328,29 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,.45);
 
 #searchbar {
 	float: left;
-	padding: 10px;
+	padding: 9px;
+	width: 100%;
 }
 
 	.search-input {
 		margin: 0;
-		padding: 5px 15px;
-		font-size: 14px;
+		padding: 8px 15px;
+		font-size: 12px;
+		line-height: 15px;
+		font-weight: 100;
 		border: none;
-		-webkit-border-radius: 2px;
+		/*-webkit-border-radius: 2px;
 		border-radius: 2px;
 		-webkit-border-bottom-right-radius: 0px;
 		border-bottom-right-radius: 0px;
 		-webkit-border-top-right-radius: 0px;
-		border-top-right-radius: 0px;
+		border-top-right-radius: 0px;*/
 	}
 	
 	.search-button {
 		margin: 0;
-		padding: 5px 15px;
-		font-size: 14px;
+		padding: 8px 15px;
+		font-size: 12px;
 		outline: none;
 		cursor: pointer;
 		text-align: center;
@@ -354,12 +358,12 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,.45);
 		color: #ffffff;
 		border: none;
 		background: #d42741;
-		-webkit-border-radius: 2px;
+		/*-webkit-border-radius: 2px;
 		border-radius: 2px;
 		-webkit-border-bottom-left-radius: 0px;
 		border-bottom-left-radius: 0px;
 		-webkit-border-top-left-radius: 0px;
-		border-top-left-radius: 0px;
+		border-top-left-radius: 0px;*/
 	}
 	
 		.search-button:hover {
@@ -412,6 +416,7 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,.45);
 
 header ul {
 	float: right;
+	display: inline-block;
 }
 
 	header li {
@@ -660,8 +665,8 @@ a.thumbnail {
 	position: absolute;
 	width: 54px;
 	height: 54px;
-	top: 50px;
-	left: 122px;
+	top: 15%;
+	left: 42%;
 	background: url('images/play-btn.png') no-repeat;
 }
 
@@ -772,7 +777,7 @@ span.action-icon {
 		text-align: center;
 		display: block;
 		float: left;
-		width: 149px;
+		width: 49%;
 		text-decoration: none;
 		border-right: 1px solid #cbcbcb;
 	}
