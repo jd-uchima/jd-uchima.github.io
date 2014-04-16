@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta name="author" content="JD Uchima">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+    <title>The NFHS Network</title>
+    
+    <link rel="stylesheet" type="text/css" href="proto.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+   
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:700,400,300' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+	    $("[data-toggle]").click(function() {
+		    var toggle_el = $(this).data("toggle");
+		    $(toggle_el).toggleClass("open-sidebar");
+		    $("#sidebar").toggleClass("showsidebar");
+		    });
+	});
+	</script>
+	
+	<script type="text/javascript">
+	$(document).on("scroll",function(){
+	    if($(document).scrollTop()>400){
+	        $("header").removeClass("large").addClass("scale");
+	    } else{
+	        $("header").removeClass("scale").addClass("large");
+	    }
+	});
+	</script>
+    
+</head>
+
+<body>
+
+	<header class="large">
+	
+		<img class="logo" src="images/nfhs.png"/>
+    	
+    	<img class="tagline" src="images/nfhs-tagline.png"/>
+	
+    	<a href="#" data-toggle=".wrapper" id="sidebar-toggle">
+    		<span class="bar"></span>
+    		<span class="bar"></span>
+    		<span class="bar"></span>
+    		<span class="hamburger-text">menu</span>
+    	</a>
+    	
+    	<ul>
+    		<li><a href="#">How it Works</a></li>
+    		<li><a class="sign_in_link" href="#"><span class="header-icon"><img src="images/icon-signin.png"/></span>Sign In</a></li>
+    		<li><a class="join-btn" href="#">Join Now</a></li>
+    	</ul>
+    	
+    	<div class="header-search">
+    	
+    		<form id="searchbar" method="get" action="http://www.google.com">
+		        <input type="text" class="search-input" name="q" size="75" maxlength="120" placeholder="Search for your school name or event"><input type="submit" value="search" class="search-button">
+		    </form>
+    	
+    	</div><!end header search bar>
+     	
+    </header><!end blue header-bar>
+    
+    	<div id="sidebar">
+        	<ul>
+        		<span class="sidebar-rule"></span>
+        		
+            	<li>
+            		<img class="sidebar-icon" src="images/icon-home.png"/>
+            		<a class="sidebar-title sidebar-home" href="#">What to watch</a>
+            	</li>
+            	
+            	<span class="sidebar-rule"></span>
+            	
+            	<li>
+            		<img class="sidebar-icon" src="images/icon-national.png"/>
+            		<p class="sidebar-inactive">National<p>
+            		
+            		<ul>
+            			<li><a class="subnav" href="#">LIVE Now</a></li>
+            			<li><a class="subnav" href="#">Highlights</a></li>
+            			<li><a class="subnav" href="#">Upcoming Events</a></li>
+            			<li><a class="subnav" href="#">Replays</a></li>
+            			<li><a class="subnav subnav-space" href="#">Game Scores &amp; Stats</a></li>
+            		</ul>
+            		<span class="sidebar-rule"></span>
+            		
+            	</li>
+            	
+            	<li><a class="sidebar-title space" href="#">Find your state</a></li>
+            	<li><a class="sidebar-title" href="#">Buy DVDs</a></li>
+            	<li><a class="sidebar-title" href="#">Pricing</a></li>
+            	<li><a class="sidebar-title" href="#">Help &amp; Support</a></li>
+            	
+            </ul>
+            
+            <div id="sidebar-signin">
+            	<a class="secondary-btn sidebar-btn" href="#">Sign In Now</a>
+            	
+            	<p class="sidebar-upsell">
+            		NFHS Network members can save events, scores, schools and clippings
+            	</p>
+            	
+            	<span class="sidebar-rule"></span>
+            	
+            	<p class="sidebar-upsell sidebar-join-label">
+            		Not a member?
+            	</p>
+            	
+            	<a class="join-btn sidebar-btn" href="#">Join Now</a>
+            	
+            </div><!end sidebar sign in area>
+            
+        </div><!end sidebar>    
+
+	<div class="wrapper">
+	
+    <div class="main-content">
+    	
+    	<div id="hero-area">
+    	
+    	<div id="hero-image"></div><!end hero-image>
+    	
+    	<div id="hero-content">	
+    	
+    	<h1>Your High School. Your Team. Your Game. <span>Streaming LIVE.</span></h1>
+    		
+    		<div id="search">
+    		
+    		</div><!end search>
+    		
+    		<p class="hero-caption">
+    			Photo: Good Haven High School Lady Bucs - 2012 Girls AAA Championships
+    		</p>
+    		
+    	</div><!end hero-content>
+    		
+    	</div><!end hero-area>
+    	
+    	<div class="ad_unit shadow">
+    		<a class="leaderboard" href="#"><img src="images/banner-ad.png"/></a>
+    	
+    	</div><!end ad unit>
+    	
+    	<div class="video-block">
+    	
+    		<div class="video-block-title">
+	    		<img src="images/icon-livenow.png"/>
+	    		<h2 class="live-now"><span class="live-game-count">52</span> Games live now |</h2>
+	    		<h3>High school events streaming live now</h3>
+	    		<a class="secondary-btn blue-hp-btn" href="#">More live events ></a>
+    		</div><!end video block title>
+    		
+    	<div class="thumbnail-container">
+    		
+	   <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type event-type-live">Video + Data</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-live eventcard-sport">Football <span class="sport-icon"><img src="images/icon-football_live.png"/></span></p>
+			    		
+			    		<p class="event-title">2013 GHSA Class 1A Championship</p>
+			    		<p class="event-participants event-participants-live">Marion County vs Charlton County</p>
+			    		<p class="event-location">Atlanta, GA</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail2.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type event-type-live">Video Only</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-live eventcard-sport">Volleyball <span class="sport-icon"><img src="images/icon-volleyball_live.png"/></span></p>
+			    		
+			    		<p class="event-title">VHSL Girls Volleyball Playoffs </p>
+			    		<p class="event-participants event-participants-live">C.D. Hylton High school vs Patrick Henry High Sc...</p>
+			    		<p class="event-location">Woodbridge, VA</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="last-card event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail event-thumbnail-purple" src="images/fpo-thumbnail-data.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type event-type-live">Data Only</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-live eventcard-sport">Basketball <span class="sport-icon"><img src="images/icon-basketball_live.png"/></span></p>
+			    		
+			    		<p class="event-title">Varsity Boys Basketball</p>
+			    		<p class="event-participants event-participants-live">Archbishop Moeller vs Mentor</p>
+			    		<p class="event-location">Mentor, OH</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+    	</div><!end thumbnail container>
+    	
+    	</div><!end video block>
+    	
+<!START HIGHLIGHTS SECTION---------->  
+  	
+    	<div class="video-block">
+    	
+    		<div class="video-block-title">
+	    		<h2 class="normal">Highlights |</h2>
+	    		<h3>Exciting, inspiring and news making plays</h3>
+	    		<a class="secondary-btn blue-hp-btn" href="#">More highlights ></a>
+    		</div><!end video block title>
+    		
+    		<div class="thumbnail-container">
+    		
+	   <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type-spacer event-type"></p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Basketball Show <span class="sport-icon"><img src="images/icon-show.png"/></span></p>
+			    		
+			    		<p class="event-title">Inside The Paint</p>
+			    		<p class="event-participants">Weekly basketball show</p>
+			    		<p class="event-location">3/8 6PM EDT | Atlanta, GA</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail2.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type-spacer event-type"></p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Diving <span class="sport-icon"><img src="images/icon-diving.png"/></span></p>
+			    		
+			    		<p class="event-title">2014 MHSAA U.P. Diving Finals</p>
+			    		<p class="event-participants">Multiple Participants</p>
+			    		<p class="event-location">2/14 2:30PM EST | Michigan</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="last-card event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail2.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type-spacer event-type"></p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Baseball <span class="sport-icon"><img src="images/icon-baseball.png"/></span></p>
+			    		
+			    		<p class="event-title">Inside the park Grand Slam</p>
+			    		<p class="event-participants">#17 Drew Johnson</p>
+			    		<p class="event-location">3/27 7 PM EDT | Maize, Kansas</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+    	</div><!end thumbnail container>
+    	
+    	</div><!end video block>
+    	
+<!START POPULAR SECTION---------->    	
+    	
+    	<div class="video-block">
+    	
+    		<div class="video-block-title">
+	    		<h2 class="normal">Popular events |</h2>
+	    		<h3>Events trending nationwide</h3>
+	    		<a class="secondary-btn blue-hp-btn" href="#">More Popular events ></a>
+    		</div><!end video block title>
+    		
+    		<div class="thumbnail-container">
+    		
+	   <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    				<a class="thumbnail" href="#"><img class="event-thumbnail event-thumbnail-yellow" src="images/fpo-thumbnail-data.png"/><div class="playbtn"></div></a>
+	    				    		
+	    		<p class="event-type">Data Only</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Football <span class="sport-icon"><img src="images/icon-basketball.png"/></span></p>
+			    		
+			    		<p class="event-title">2013 GHSA Class 1A Championship</p>
+			    		<p class="event-participants">Marion County vs Charlton County</p>
+			    		<p class="event-location">Atlanta, GA</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail event-thumbnail-red" src="images/fpo-thumbnail-data.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type">Data Only</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Volleyball <span class="sport-icon"><img src="images/icon-basketball.png"/></span></p>
+			    		
+			    		<p class="event-title">VHSL Girls Volleyball Playoffs </p>
+			    		<p class="event-participants">C.D. Hylton High school vs Patrick Henry High Sc...</p>
+			    		<p class="event-location">Woodbridge, VA</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+	     <!event card start!>    		
+	    		<div class="last-card event-card">
+	    		
+	    		<a class="thumbnail" href="#"><img class="event-thumbnail" src="images/fpo-thumbnail2.png"/><div class="playbtn"></div></a>
+	    		
+	    		<p class="event-type">Video Only</p>
+	    		
+		    		<div class="event-details">
+		    		
+			    		<p class="eventcard-sport">Basketball <span class="sport-icon"><img src="images/icon-football.png"/></span></p>
+			    		
+			    		<p class="event-title">Varsity Boys Basketball</p>
+			    		<p class="event-participants">Archbishop Moeller vs Mentor</p>
+			    		<p class="event-location">Mentor, OH</p> 
+		    		
+		    		</div><!end event details text block>
+		    		
+		    		<div class="eventcard-actionlinks">
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-watch_later.png"/></span>Watch Later</a>
+		    			
+		    			<a class="action-links-btn" href="#"><span class="action-icon"><img src="images/icon-favorite.png"/></span>Favorite</a>
+		    			
+		    			
+		    		</div><!end event card action links>
+	    		
+	    		</div>
+	   <!end event card>
+	   
+    	</div><!end thumbnail container>
+    	
+    	</div><!end video block>
+    	
+    	<div id="about" class="shadow">
+    	
+    	
+    	</div><!end about NFHS section>
+    
+    </div><!end main-content>
+	
+	</div><!end wrapper>
+	
+</body>
+
+
+
+</html>
