@@ -700,6 +700,7 @@ p.event-type {
 .event-details {
 	padding: 10px;
 	padding-bottom: 0px;
+	text-align: center;
 }
 
 .event-details p {
