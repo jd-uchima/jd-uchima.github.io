@@ -877,6 +877,52 @@ footer {
  MEDIA QUIERIES
 ------------------------------*/
 
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	
+	.video-block {
+		width: 100%;
+		min-width: 0px;
+		height: auto;
+		overflow: auto;
+	}
+	
+	.video-block-title img {
+		padding-right: 10px;
+	}
+	
+	.video-block-title h3 {
+		font-size: 16px;
+		padding-left: 25px;
+		line-height: 20px;
+		margin-top: -10px;
+		padding-left: 50px;
+	}
+	
+	.video-block-title h2.normal {
+		padding-left: 50px;
+	}
+	
+	.blue-hp-btn {
+		float: left;
+		margin-top: 10px;
+		margin-left: 50px;
+	}
+	
+	.video-block-title {
+		height: 125px;
+	}
+	
+	.event-card {
+		width: 90%;
+		margin: 5%;
+	}
+	
+	#highlights, #popular {
+		display: none;
+	}
+}
+
 
 @media screen and (max-width: 1270px) {
 
