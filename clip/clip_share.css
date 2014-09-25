@@ -562,7 +562,7 @@ footer#footer .wrapper .footer-main li {
      MEDIA QUERIES
 ------------------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 	
 	img.icon {
 		width: 60px;;
@@ -577,9 +577,18 @@ footer#footer .wrapper .footer-main li {
 		width: 100%;
 	}
 	
-	#section-1, #section-2, #section-3 {
+	#section-1 {
 		background-position: 60% 100%;
 		background-size: 185%;
+	}
+	
+	#section-2 {
+		background: url('images/bg-clip_it_large-smallscreen.png') no-repeat;
+	}
+	
+	#section-3 {
+		background-position: 80% 108%;
+		background-size: 90%;
 	}
 }
 
