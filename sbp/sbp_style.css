@@ -1,0 +1,562 @@
+@charset "UTF-8";
+/* RESET */
+
+html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, pre, font,
+a, code, em, font, img, ins, kbd, q, s, samp, small,strong,dl, dt, dd, ol, ul, li,
+fieldset, form, label {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+::selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+/*------------------
+BODY STYLES
+---------------------*/
+
+body {
+	background: url('images/bg.gif');
+}
+
+h1, h2 {
+	font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;	
+}
+
+/*------------------
+HEADER STYLES
+---------------------*/
+
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: #00255c;
+	border-bottom: 1px solid #fff;
+} 
+
+#main_logo {
+	width: 182px;
+	height: 64px;
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+#sign_in_bttns {
+	width: 250px;
+	height: 50px;
+	display: inline-block;
+	float: right;
+}
+
+a.sign_in_link {
+	height: 50px;
+	padding: 0px 15px 0px 10px;
+	margin-right: 15px;
+	border-left: 1px solid #33517d;
+	border-right: 1px solid #33517d;
+	font-size: 14px;
+	line-height: 50px;
+	color: #fff;
+	display: inline-block;
+}
+
+	a.sign_in_link:hover {
+		text-decoration: none;
+		background-color: #18274f;
+	}
+	
+	img.silo {
+		width: 28px;
+		padding-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+/*------------------
+RED BUTTON STYLES
+---------------------*/
+	
+a.red_bttn {
+	width: 83px;
+	height: 30px;
+	font-size: 16px;
+	background-color: #e51937;
+	color: #fff;
+	display: inline-block;
+	float: right;
+	line-height: 30px;
+	margin-right: 23px;
+	margin-top: 10px;
+	padding-left: 18px;
+}
+	a.red_bttn:hover {
+		text-decoration: none;
+		background-color: #b1229;
+	}
+	
+a.left_bttn {
+	float: left;
+}
+	
+
+/*----------------
+GLOBAL STYLES
+--------------------*/
+
+.container {
+	width: 95%;
+	max-width: 1020px;
+	margin: 0px auto;
+	padding-top: 100px;
+	overflow: auto;
+}
+
+
+h1 {
+	font-size: 55px;
+	line-height: 50px;
+	font-weight: 200;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ea1838;
+	border-top: 1px solid #ea1838;
+	width: 65%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+h2 {
+	font-size: 45px;
+	line-height: 40px;
+	font-weight: 800;
+	color: #4b4b4b;
+	margin-bottom: 70px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 35px;
+	line-height: 40px;
+	font-weight: 100;
+	color: #4b4b4b;
+	text-align: center;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 800;
+	color: #2e2e2e;
+}
+
+.clear_fix {
+	clear: both;
+	
+}
+
+
+
+/*------------------
+HERO IMAGE STYLES
+---------------------*/
+
+#hero {
+	background: url('images/hero_image_final.jpg') no-repeat 50%;
+	height: 400px;	
+	background-size: auto 520px;
+	background-color: #2e2e2e;
+}
+
+#main_headline {
+	background-color: #2e2e2e;
+	min-height: 180px;
+	background-size: auto 520px;
+	overflow: auto;
+}
+
+/*------------------
+About Section
+---------------------*/
+#about {
+	min-height: 600px;
+	padding-bottom: 10px;
+	overflow: auto;
+	
+}
+
+p#about_body_copy {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*------------------
+Benefits Section
+---------------------*/
+
+#benefits {
+	background: url('images/benefits_bg.jpg') no-repeat 50%;
+	min-height: 960px;	
+	background-size: auto 1220px;
+	background-color: #fbf8ef;
+	overflow: auto;
+	
+}
+
+/*THREE COLUMN GRID STYLES*/
+	
+.benefit_col {
+	min-height: 600px;
+	float:left;
+	margin-left:2%;
+    padding:0 1.5%;		
+}
+
+	.benefit_col:first-of-type {
+    	margin-left:0;
+	}
+
+.span_1, .benefit_col {
+	width:29%;
+}
+.span_2 {
+    width:66%;
+}
+.span_3 {
+    margin-left:0;
+    width:100%;
+}
+
+/*END GRID SYS*/	
+
+
+.grey_col_boxes {
+	width:100%;
+	min-height: 580px;
+	background-color: #515151;
+}
+
+img.icon {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0px auto;
+	padding-top: 40px;
+}
+
+.box_blurb {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 200;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 20px;
+	width: 80%;
+	display: block;
+	margin: 0px auto;	
+}
+
+
+/*------------------
+Testimonials Section
+---------------------*/
+
+#testimonials {
+	min-height: 950px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+#testimonials_content {
+	height: 1150px;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-top: 100px;
+	margin: 0px auto;
+}
+
+.testimonials_sections {
+	width: 85%;
+	min-height: 250px;
+	overflow: auto;
+	padding-top: 80px;
+	margin: 0px auto;	
+}
+
+	.testimonials_sections:first-child {
+			padding-top: 0px;
+	}
+
+.testimonials_image {
+	width: 380px;
+	float: left;
+	display: block;
+	margin: 0px auto;
+}
+
+.testimonials_blurb {
+	width: 380px;
+	min-height: 250px;
+	display: block;
+	float:left;
+	margin-left: 50px;
+}
+
+.testimonials_body_copy {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #2e2e2e;
+	padding-top: 20px;	
+}
+
+.testimonials_name {
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 200;
+	color: #2e2e2e;
+	font-style: italic;
+	padding-top: 20px;
+}
+
+/*------------------
+Recognition Section
+---------------------*/
+
+#recognition {
+	background: url('images/honor_program_bg.jpg') no-repeat 50%;
+	min-height: 700px;	
+	background-size: auto 1220px;
+	background-color: #dcdad2;
+	overflow: auto;
+}
+
+.badges {
+	width: 307px;
+	height: 145px;
+	display: block;
+	margin: 0px auto;	
+	margin-top: 50px;
+}
+
+p#recognition_body_copy {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+a.hr_bttn {
+	width: 140px;
+	height: 45px;
+	background-color: #4685bd;
+	-webkit-box-shadow: 1px 2px rgba(0,0,0,.32);
+	-moz-box-shadow: 1px 2px rgba(0,0,0,.32);
+	box-shadow: 1px 2px rgba(0,0,0,.32);
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	line-height: 45px;
+	padding-left: 22px;
+	text-decoration: none;
+	margin: 0px auto;
+}
+
+a.hr_bttn:hover {
+	background-color: #3973a6;
+}
+	
+	
+a {
+	text-decoration:none;
+	color: #4685bd;
+	font-weight: 400;
+}
+
+
+/*------------------
+Contact Section
+---------------------*/
+
+#contact {
+	min-height: 500px;	
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+
+/*------------------------------
+     MEDIA QUERIES
+------------------------------*/
+
+
+@media screen and (max-width: 680px) {
+
+	.container {
+		width: 90%;
+		margin: 0px auto;	
+	}
+	
+	h1 {
+		font-size: 39px;
+	}
+	
+	.benefit_col {
+		margin-left:0;
+		width:100%;
+		padding: 0 0;
+	}
+	
+	#benefits {
+		background: #fbf8ef;
+		min-height: 1150px;	
+		background-size: auto 1220px;
+		background-color: #fbf8ef;
+		overflow: auto;	
+		padding-bottom: 50px;
+	}
+	
+	.grey_col_boxes {
+		min-height: 400px;
+	}
+	
+	.box_blurb {
+		padding-bottom: 50px;
+	}
+		
+	.testimonials_sections {
+		width: 100%;	
+		padding-top: 20px;
+	}
+	
+	.testimonials_image {
+		width: 100%;
+		height:auto;
+	}
+	
+	.testimonials_blurb {
+		width: inherit;
+		margin-left:0px;
+		margin-top: 20px;
+		float: none;
+	}
+	
+	#testimonials_content {
+		height: 1600px;
+	}
+	
+	#testimonials {
+		padding-bottom: 50px;
+			
+	}
+		#recognition {
+		padding-bottom: 50px;
+	}
+	
+	#contact {
+		padding-bottom: 50px;
+	}
+	
+	.badges {
+		width: 100%;
+	}
+	
+	.badges img {
+		width: 49%;
+	}
+
+}
+
+@media (min-width: 681px) and (max-width: 1000px) {
+	
+	#benefits {
+		background-image: none;
+	}
+	
+	.benefit_col {
+		margin-left: 0px;
+		width: 100%;
+		min-height: 280px;
+		padding: 0px;
+	}
+	
+	.grey_col_boxes {
+		min-height: 190px;
+	}
+	
+	img.icon, .box_blurb {
+		display: inline-block;
+		margin-left: 15px;
+	}
+	
+	.box_blurb {
+		text-align: left;
+	}
+	
+	.testimonials_sections {
+		width: 100%;
+	}
+	
+	.testimonials_blurb {
+		width: 50%;
+		margin-left: 20px;
+	}
+	
+	.testimonials_image {
+		width: 46%;
+	}
+}
