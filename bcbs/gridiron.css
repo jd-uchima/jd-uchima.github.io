@@ -244,6 +244,102 @@ p.keyword {
 }
 
 /*------------------
+TV SCHEDULES STYLES
+---------------------*/
+
+#schedules {
+	background-color: #fff;
+	min-height: 500px;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
+#cities {
+	width: 22%;
+	padding-right: 0px;
+	margin-top: 93px;
+}
+
+#cities ul {
+	font-size: 14px;
+	border: 1px solid #cbcbcb;
+	border-right: 0px;
+}
+
+#cities ul li, .division li {
+	border-bottom: 1px solid #cbcbcb;
+	padding: 0px 25px;
+	text-align: right;
+}
+
+	#cities ul li {
+		line-height: 72px;
+		font-weight: 600;
+	}
+	
+	#cities ul li:last-child {
+		border-bottom: 0px;
+	}
+
+.date {
+	width: 36%;
+	float: left;
+	border: 1px solid #cbcbcb;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top: 1.5%;
+}
+
+	.date:last-child {
+		margin-left: 1.5%;
+	}
+
+p.date_title {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 800;
+	line-height: 65px;
+	background-color: #00255c;
+	color: #fff;
+}
+
+span.time {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: normal;
+	color: #e51937;
+}
+
+ul.division {
+	width: 33.333%;
+	float: left;
+}
+
+	ul.division:nth-child(4) li {
+		border-right: 0px;
+	}
+
+.division li {
+	text-align: center;
+	font-size: 10px;
+	border-bottom: 0px;
+	border-top: 1px solid #cbcbcb;
+	border-right: 1px solid #cbcbcb;
+	line-height: 16px;
+	padding: 5px 0px;
+	font-style: italic;
+}
+
+	li.class_type {
+		font-size: 16px;
+		font-weight: 600;
+		font-style: normal;
+		background-color: #009ddc;
+		color: #fff;
+	}
+
+/*------------------
 T&C STYLES
 ---------------------*/
 
