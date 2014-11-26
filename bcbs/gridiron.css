@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* RESET */
+
+html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, pre, font,
+a, code, em, font, img, ins, kbd, q, s, samp, small,strong,dl, dt, dd, ol, ul, li,
+fieldset, form, label {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+::selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+/*------------------
+BODY STYLES
+---------------------*/
+
+body {
+	background: url('images/bg.gif');
+}
+
+h1, h2 {
+	font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;	
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration:none;
+	color: #4685bd;
+	font-weight: 400;
+}
+
+/*------------------
+HEADER STYLES
+---------------------*/
+
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: #00255c;
+	border-bottom: 1px solid #fff;
+} 
+
+#main_logo {
+	width: 182px;
+	height: 64px;
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+	
+	
+/*----------------
+GLOBAL STYLES
+--------------------*/
+
+.span_1 {
+	width:32.0%;
+}
+
+.span_2 {
+	width:66.0%;
+}
+
+.span_3 {
+	margin-left:0;
+	width:100%;
+}
+
+.col {
+	margin-left:2%;
+	padding:1.5% 1.5% 2.5% 1.5%;
+	border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+        
+.col:first-child {
+	margin-left:0;
+}
+
+.col:nth-child(4) {
+	margin-left:0;
+}
+
+.wrapper {
+	width: 75%;
+	height: inherit;
+	max-width: 980px;
+	margin: 0px auto;
+}
+
+span.rule {
+	border-bottom: 1px solid #cbcbcb;
+	width: 95%;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 15px;
+}
+
+
+/*------------------
+HERO IMAGE STYLES
+---------------------*/
+
+#hero {
+	background: url('images/GridironClassic-hero.jpg') no-repeat 50%;
+	height: 470px;	
+	background-size: auto 644px;
+}
+
+#intro_copy {
+	height: auto;
+	margin: 0px auto;
+	color: #3d3d3d;
+	margin-top: 50px;
+	margin-bottom: 50px; 
+}
+
+#intro_copy h1 {
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #17386a;
+	margin-bottom: 15px;
+}
+
+p#intro_body_copy {
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 34px;
+	margin-bottom: 30px;
+}
+
+span.bold {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #e51937;
+}
+
+p.fineprint {
+	font-size: 14px;
+	line-height: 18px;
+	color: #808080;
+}
+
+
+/*------------------
+EVENT CARD STYLES
+---------------------*/
+
+#card_container {
+	min-height: 500px;
+	overflow: auto;
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+
+.event_card {
+	width: 100%;
+	min-height: 290px;
+	border: 1px solid #cbcbcb;
+	background-color: #fdfdfd;
+}
+
+	.event_card img {
+		width: 100%;
+		margin-bottom: 10px;
+		background-color: #000;
+	}
+	
+	.event_card img:hover {
+		opacity: .75;
+	}
+	
+	.event_card p, h2 {
+		text-align: center;
+	}
+	
+p.game_details {
+	font-size: 12px;
+	line-height: 16px;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+p.keyword {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 8px;
+}
+
+/*------------------
+T&C STYLES
+---------------------*/
+
+p.legal {
+	font-size: 10px;
+	line-height: 16px;
+	color: #a3a3a3;
+	margin-bottom: 20px;
+}
+
+/*------------------
+FOOTER STYLES
+---------------------*/
+
+footer#footer {
+    background: #262627;
+    padding-bottom: 5px;
+    height: 100px;
+    position: relative;
+    z-index: 99;
+}
+
+
+
+/*------------------------------
+     MEDIA QUERIES
+------------------------------*/
+
+@media screen and (max-width: 700px) {}
+
