@@ -137,7 +137,7 @@ GLOBAL STYLES
 }
 
 .wrapper {
-	width: 75%;
+	width: 90%;
 	height: inherit;
 	max-width: 980px;
 	margin: 0px auto;
@@ -280,6 +280,7 @@ TV SCHEDULES STYLES
 	#cities ul li:last-child {
 		border-bottom: 0px;
 	}
+	
 
 .date {
 	width: 36%;
@@ -368,5 +369,35 @@ footer#footer {
      MEDIA QUERIES
 ------------------------------*/
 
-@media screen and (max-width: 700px) {}
+@media (min-width: 320px) and (max-width: 768px) {
+	
+	.span_1 {
+		width: 100%;
+	}
+	
+	.col {
+		padding-left: 0px;
+	}
+	
+	.date {
+		width: 73%;
+		margin-left: 0% !important;
+	}
+	
+	#cities {
+		width: 26%;
+	}
+	
+	#cities ul li {
+		font-size: 11px;
+		padding: 0px 5px;
+		line-height: 14px;
+		height: 80px;
+	}
+	
+	.division li img {
+		height: 20px;
+	}
+
+}
 
