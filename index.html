@@ -509,28 +509,12 @@
 	
 	</div><!end wrapper>
 	
-<script type="text/javascript">
-  (function(){
-    var useriq=window._uiq=window._uiq||[];useriq.invoked&&window.console&&console.error&&console.error("Useriq snippet already exists."),useriq.invoked=!0,useriq.methods=["setSiteId","startTracker","setDoNotTrack","identify","track","group"],useriq.factory=function(e){return function(){var r=Array.prototype.slice.call(arguments);return r.unshift(e),useriq.push(r),useriq}};for(var i=0;i<useriq.methods.length;i++){var key=useriq.methods[i];useriq[key]=useriq.factory(key)} 
-    // We have dynamically assigned your useriq_site_id
-    var useriq_site_id = "508051901"
-    //All green highlights indicate the areas in the UserIQ script that should contain your own variables
-    // user id is required
-    var user_id = "JD-Test"
-    // account id is required for account analytics
-    var account_id = "JD-Test-acctID"
-    useriq.setSiteId(useriq_site_id)
-    useriq.identify(user_id, {
-      user_name: 'JD',
-      account_id: account_id,
-      account_name: 'JDTest',
-      user_email: 'jd@useriq.com',
-      signup_date: '2017-09-12',
-    })
-    useriq.startTracker()
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src="https://feed.useriq.com/useriq.js"; s.parentNode.insertBefore(g,s);
-  })();
+<script>
+!function(e,l,v,i,o,n){e[i]||(e[i]={}),e[i].account_id=n;var g,h;g=l.createElement(v),g.type="text/javascript",g.async=1,g.src=o+n,h=l.getElementsByTagName(v)[0],h.parentNode.insertBefore(g,h);e[i].q=[];e[i].on=function(z,y){e[i].q.push([z,y])}}(window,document,"script","_elev","https://cdn.elev.io/sdk/bootloader/v4/elevio-bootloader.js?cid=","5a1d6d20cc7a2");
+/*
+ * For passing user information, please see
+ * https://api-docs.elevio.help/en/articles/24
+ */
 </script>	
 	
 </body>
